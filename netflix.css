@@ -1,0 +1,400 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:
+
+}
+body{
+    background-color:black;
+}
+.mainNetflixContainer{
+    /* border: 2px solid red; */
+    /* padding: 0rem 2rem; */
+    
+}  
+.contentContainer{
+    position:absolute;
+    top:0;
+    background-color:rgba(0,0,0,.5);
+    padding: 0rem 2rem;
+
+}
+ 
+
+.backgroundContainer{
+    background-image:url("./back.jpg");
+    filter:blur(16px);
+    height:100vh;
+    position:relative;   
+}
+.pinkOverlay{
+    background-color: rgb(110, 106, 107);
+    height:100%;
+    width:100%;
+}
+
+     
+
+nav{
+    /* border:2px solid  green; */
+    height:20vh;
+    position:fixed;
+    z-index:10000;
+
+}
+
+
+.upperNavbarSection{
+    /* border:2px solid blue; */
+    display:flex;
+    height :50%;
+
+}
+.upperNavbarLeftSection{
+    /* border:2px solid red; */
+    width:50%;
+       
+
+}
+.netflixLogo{
+    width:  30%;
+}
+.upperNavbarRightSection{
+   /* border:2px solid rgb(12, 33, 6); */
+    width:50%;
+} 
+
+
+.langButton {
+    display: flex; /* Aligns content horizontally */
+    align-items: center; /* Vertically centers the content */
+    padding: 0.5rem 0.7rem; /* Adjust button padding */
+    font-size: 14px; /* Adjust button text size */
+    border:none;
+    border-radius:30px;
+    border: 1px solid white;
+    outline:none;
+    background:transparent;
+    color:white;
+
+}
+
+.langButton p{
+
+}  
+.langIcon {
+    width: 15px; /* Adjust the image size */
+    height: 15px; /* Adjust the image size */
+    margin-right: 12px; /* Adds some space between the image and the text */
+    margin-left:0px;
+}
+
+.langButton svg {
+    width: 20px; /* Adjust SVG size if needed */
+    height: 20px; /* Adjust SVG size */
+    margin-right: 8px; /* Adds space between SVG and image */
+}
+
+.navBarButtonContainer{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    height:100%;
+    
+}
+.signinButton{
+    border:none;
+    border-radius:30px;
+    border: 1px solid white;
+    background-color: rgb(26, 26, 211);
+    background:white;
+    color:black;
+    padding: 0.5rem 0.7rem;
+    font-size: 14px;
+    margin-left:20px;
+}
+
+.lowerNavbaSection{
+      /* border:2px solid rgb(223, 58, 17);  */
+    height:50%; 
+    display:flex;
+    justify-content: center ;
+    
+    
+    
+
+}
+.menuList{
+    /* border:2px solid green; */
+    width:60%;
+    color:white;
+    fontsize:10px;
+    list-style:none; /*removing bullets*/ 
+    display:flex; 
+    justify-content: space-evenly ;
+    border-radius:50px;
+    align-items:center;
+     background:rgba(0, 0, 0, .5);
+     box-shadow:2px 3px 14px rgba(0, 0, 0, 0.5);
+     height:7vh;
+
+}
+.menuList li{
+    /* border:2px solid red; */
+    height:100%;
+    display:flex;
+    align-items:center;
+
+}
+
+.bannerSection{
+    /* border:2px solid red; */
+    height:90vh;
+    background-image:url("./back.jpg");
+    border-radius:20px;
+    margin-top: 2rem;
+    background-size:100% 100%;   
+
+
+}
+.overlay{
+    height:100%;
+    width:100%;
+    background-image:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0.9));
+    border-radius:20px; 
+}
+.bannerContainer{
+    /* border:2px solid red; */
+    height:80%;
+    width:100%;
+    position:absolute;
+    top: 0;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content;center;
+    align-items:center;
+    margin-top:300px;
+    bottom:0;
+
+
+
+}
+.bannerContainer h2{
+    font-size:2rem;
+    width:50%;
+    text-align:center;
+
+
+}
+
+.bannerContainer h4{
+    font: size 1.5rem;
+    margin:20px;
+
+
+}
+
+.bannerContainer p{
+
+font-size:1rem;
+margin:20px;
+}
+
+.emailInputBox{
+    padding: 1rem 2rem;
+    border-radius:50px;
+    border:none;
+    outline:none;
+    width:60%;
+    background-color:rgba(1,1,1,.3);
+    border: 1px solid white;
+    font-size:1rem;
+
+}
+
+.emailInputBox ::placeholder{
+    color:white;
+
+}
+.inputContainer{
+    width:50%;
+    display:flex;
+    justify-content:space-evenly;
+
+}
+
+.getStartedButton{
+    width:30%;
+    background-color:red;
+    border:none;
+    outline:one;
+    border-radius:50px;
+    color:white;
+    font-size:1.2rem;
+    font-weight:900;
+}
+
+
+.carouselSection,
+.planSection
+.reasonToJoinSection,
+.faqSection{
+  /* border:2px solid red; */
+  color:white;
+  width:100%;
+  height:100%;
+  margin-bottom: 10px; 
+
+}
+.carouselSection h2,
+.planSection h2,
+.reasonToJoinSection h2
+.faqSection{
+   margin-left:5rem;
+   font-size:2.5rem;
+   color:white;
+}
+
+.carouselcardContainer,
+.plansContainer,
+.reasonsContainer{
+    /* border:2px solid rgb(11, 219, 11); */
+    height:100%;
+    width:80%;
+    display:flex;
+    
+    justify-content: space-evenly;
+    margin:2rem auto;
+
+
+}
+
+.carouselNumberContainer span{
+    color:rgba(0,0,0,0.8);
+    -webkit-text-stroke: 0.125rem rgb(255,255,255);
+    outline-color:white;
+    text-shadow:0 0 1.5rem rgba(0,0,0.5);
+    font-size:5rem;
+    position:absolute;
+    left:-50x;
+
+}
+.carouselCard{
+    width:15%;
+    /* border:2px solid yellow; */
+    height:50vh;
+    border-radius:25%;
+
+
+}
+.carouselImageContainer img{
+
+ height:100px;
+    width:100%;
+}
+
+
+.planCard,
+.reasonCard{
+    border:2px solid green;
+    height:40vh;
+    width:22%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    padding: 1rem 2rem;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,0.7);
+    align-items: center;
+   
+
+
+
+}
+.planCard h2,
+.reasonCard h2{
+    margin-left:0;
+    font-size:1.5rem;
+    color:white;
+}
+.planCard h4{
+    font-size:1.3rem;
+    color:white;
+}
+
+.planCard p
+{
+    font-size:1rem;
+    font-weight:500;
+    color:white;;
+}
+.reasonCard p{
+  font-size:0.8rem;
+  font-weight:500;
+  color:white;
+  margin-left:0;
+  margin-bottom: 10px;
+}
+
+.planCard1{
+    background:linear-gradient(149deg,
+     #1C4072 6.96%,
+      #172B47 40.17%,
+      #120c1f 73.39%);
+
+}
+
+
+.planCard2{
+    background:linear-gradient(149deg, #1C4072 6.96%, #1D529D 40.17%,#120c1f 73.39%);
+
+}
+
+.planCard3{
+    background:linear-gradient(149deg, 
+    #792A95 6.96%,
+    #38216C 40.17%,
+    #120c1f 73.3%)
+
+}
+.planCard4{
+    background:linear-gradient(149deg, 
+    #922556 6.96%,
+    #391945 40.17%,
+    #120c1f 73.3%)
+
+}
+
+.reasonCard{
+    background:rgb(47,47,47);
+    border:none;
+}
+
+.faqCard{
+     border:2px solid red;
+}
+
+.faqQuestion,
+.faqAnswer{
+    padding:2rem;
+    border-radius:10px;
+     /* border:1px solid white; */
+    margin-bottom:20px;
+    background:rgb(47,47,47);
+
+}
+
+.faqQuestion{
+    display:flex;
+    justify-content:space-between;
+    align-items:
+}
+.faqQuestion span:hover,.faqAnswer{
+    font-size:2rem;
+    font-weight:900;
+}
+.faqAnswer{
+    display:none;
+}
